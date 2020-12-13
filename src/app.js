@@ -4,6 +4,7 @@ const hbs = require("hbs");
 const getWeather = require("./utils/getWeather");
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 // Define paths
 const publicDirectoryPath = path.join(__dirname, "../public");
@@ -86,7 +87,6 @@ app.get("*", (req, res) => {
   });
 });
 
-const port = 3000;
 app.listen(port, () => {
   console.log("Server is connected, Port:", port);
 });
