@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weahter</title>
+    <link rel="shortcut icon" href="/img/weather.png" type="image/x-icon">
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="./main.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>Use this site to get your weahter!</p>
+        <form id="my-form">
+            <input type="text" placeholder="Insert adress">
+            <button type="submit">Search</button>
+        </form>
+        <div id="weather-content"></div>
+    </div>
+    {{>footer}}
+</body>
+
+</html>
