@@ -47,11 +47,11 @@ form.addEventListener("submit", (event) => {
       weatherContent.appendChild(description);
 
       const temperature = document.createElement("p");
-      temperature.innerText = `Temperature: ${res.temperature}`;
+      temperature.innerText = `Temperature: ${res.temperature}°C`;
       weatherContent.appendChild(temperature);
 
       const feelslike = document.createElement("p");
-      feelslike.innerText = `Feels likes: ${res.feelslike}`;
+      feelslike.innerText = `Feels likes: ${res.feelslike}°C`;
       weatherContent.appendChild(feelslike);
     })
     .catch((err) => {
@@ -60,5 +60,3 @@ form.addEventListener("submit", (event) => {
       weatherContent.appendChild(error);
     });
 });
-
-//mod
